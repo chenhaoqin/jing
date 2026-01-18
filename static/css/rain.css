@@ -1,0 +1,34 @@
+#rain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+.rain {
+  position: absolute;
+  top: -10vh;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0));
+  filter: blur(0.5px);
+  border-radius: 50%;
+  transform: rotate(var(--angle));
+  animation: fall linear infinite;
+  box-shadow: 0 0 8px rgba(9, 8, 8, 0.7), 0 0 15px rgba(0, 150, 255, 0.5);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(var(--angle));
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(120vh) rotate(var(--angle));
+    opacity: 0;
+  }
+}

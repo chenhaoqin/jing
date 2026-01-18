@@ -1,0 +1,44 @@
+/* 播放按钮样式 */
+#playButton {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #0096cc, #00ddff);
+	border: 0px solid rgba(255, 255, 255, 0.3);
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+#playButton:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(135deg, #1d5ef7, #117cff);
+}
+
+#playButton::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 20px solid white;
+	margin-bottom: 5px;
+}
+
+#playButton::after {
+	content: '播放音乐';
+	font-size: 12px;
+	letter-spacing: 1px;
+}

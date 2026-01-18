@@ -1,0 +1,10 @@
+/* ===== 页面背景与默认文字颜色 ===== */
+html, body {
+    height: 100%;
+    color: #00FF00; /* 默认文字颜色，可根据需要修改 */
+}
+
+body {
+    background: url('https://s1.ax1x.com/2020/07/30/ansR4x.jpg') center center no-repeat;
+    background-size: cover;
+}

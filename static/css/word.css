@@ -1,0 +1,50 @@
+@import url("https://fontsapi.zeoseven.com/445/main/result.css");/* YFJLXS */
+
+/* ===== 左侧电影感字幕样式 ===== */
+.subtitle-box {
+    position: fixed;
+    left: 3%;
+    top: 6%;
+    width: 45%;
+    z-index: 100;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
+    letter-spacing: 1px;
+}
+
+.subtitle-line.cn {
+    color: #fde2c4;
+    font-size: 25px;
+    font-family: "YFJLXS";
+    /* 优化阴影：增加柔化光晕，贴合背景梦幻感 */
+    text-shadow: 
+        0 0 4px rgba(255,255,255,0.9), /* 内层白光晕增强文字通透感 */
+        0 1px 3px rgba(0,0,0,0.3); /* 轻微下阴影增加立体感 */
+    text-indent: 2em;
+    margin-bottom: 15px;
+    /* 新增：文字边缘柔化，减少生硬感 */
+    -webkit-text-stroke: 0.3px rgba(255,255,255,0.5);
+    /* 新增：轻微倾斜，增加灵动性（可选） */
+    transform: skewX(-1deg);
+}
+
+.subtitle-line.en {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: "YFJLXS";
+    text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    margin-bottom: 14px;
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@keyframes fadeInLine {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
